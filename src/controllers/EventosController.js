@@ -1,5 +1,6 @@
 import { db } from "../config/db.js";
 
+
 // LISTAR TODOS
 export const listarEventos = async (req, res) => {
   try {
@@ -46,7 +47,9 @@ export const atualizarEvento = async (req, res) => {
       "UPDATE eventos SET nome=?, local=?, data=? WHERE id=?",
       [nome, local, data, id]
     );
-    if (result.affectedRows === 0) return res.status(404).json({ erro: "Evento não encontrado" });
+    if (result.affectedRows === 0)
+      return res.status(404).json({ erro: "Evento não encontrado" });
+
     res.json({ mensagem: "Evento atualizado" });
   } catch (err) {
     res.status(500).json({ erro: err.message });
@@ -59,7 +62,9 @@ export const deletarEvento = async (req, res) => {
 
   try {
     const [result] = await db.query("DELETE FROM eventos WHERE id=?", [id]);
-    if (result.affectedRows === 0) return res.status(404).json({ erro: "Evento não encontrado" });
+    if (result.affectedRows === 0)
+      return res.status(404).json({ erro: "Evento não encontrado" });
+
     res.json({ mensagem: "Evento removido" });
   } catch (err) {
     res.status(500).json({ erro: err.message });
