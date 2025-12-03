@@ -82,7 +82,7 @@ FOREIGN KEY (evento_id) REFERENCES eventos(id)
 
 Arquivo .env
 
-(Nota: incluído apenas para fins acadêmicos para demonstração. Não deve ser enviado em projetos reais.)
+(Nota: incluído apenas para fins acadêmicos conforme solicitado pelo professor. Não deve ser enviado em projetos reais.)
 
 DB_HOST=localhost
 DB_USER=root
@@ -148,4 +148,4 @@ Variáveis de ambiente funcionando
 Documentação completa para avaliação
 
 Autor
-Desenvolvido por João Pedro e Natã dos Anjos para a disciplina de Desenvolvimento Web.
+Desenvolvido por João Pedro para a disciplina de Desenvolvimento Web.
