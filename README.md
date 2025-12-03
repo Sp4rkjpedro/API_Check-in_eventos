@@ -148,4 +148,4 @@ Variáveis de ambiente funcionando
 Documentação completa para avaliação
 
 Autor
-Desenvolvido por João Pedro para a disciplina de Desenvolvimento Web.
+Desenvolvido por João Pedro e Natã dos Anjos para a disciplina de Desenvolvimento Web.
